@@ -105,8 +105,9 @@ See the list below for the matching Visual Studio and platform toolset versions 
 Please note that you can always use the latest Visual Studio, but make sure you provide the correct platform toolset.
 
 Example for using Visual Studio 2022 with platform toolset 142:
+
 ```
-cmake -B Build -G "Visual Studio 17 2022" -A x64 -T v142 -DAC_API_DEVKIT_DIR=<DevKitSupportDir> -DAC_VERSION=28
+cmake -B Build -G "Visual Studio 17 2022" -DAC_API_DEVKIT_DIR="./acapi28/support" -DAC_VERSION=28 .
 ```
 
 #### XCode (MacOS)
