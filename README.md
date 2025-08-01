@@ -108,6 +108,10 @@ Example for using Visual Studio 2022 with platform toolset 142:
 
 ```
 cmake -B Build -G "Visual Studio 17 2022" -DAC_API_DEVKIT_DIR="./acapi28/support" -DAC_VERSION=28 .
+
+
+cmake -B build -G Ninja -DCMAKE_C_COMPILER=cl.exe -DCMAKE_CXX_COMPILER=cl.exe -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DAC_API_DEVKIT_DIR="./acapi28/support" -DAC_VERSION=28 .
+
 ```
 
 #### XCode (MacOS)
